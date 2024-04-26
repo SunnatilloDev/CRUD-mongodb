@@ -2,8 +2,8 @@ import express from "express";
 import productsRouter from "./routes/productsRoute.js";
 import { configDotenv } from "dotenv";
 import "./config/connectToDB.js";
-let app = express();
 configDotenv();
+let app = express();
 let PORT = process.env.PORT || 8080;
 app.use(express.json());
 
